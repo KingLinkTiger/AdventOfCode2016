@@ -15,7 +15,6 @@ for d in directions:
     count = int(d[1:])
     print dir
     print count
-    print 
     if turn == "R":
         dir += 1
     else:
