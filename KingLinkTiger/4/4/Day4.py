@@ -130,9 +130,9 @@ for line in lines:
         
         for grouping in EncryptedName.group(1).split("-"):
             for y in range(1,26):
-                print caesar(grouping, y)
+                #print caesar(grouping, y)
                 if caesar(grouping, y) == "northpole":
-                    print SectorID
+                    print "Part 2: " + SectorID
                     exit()
 
         
