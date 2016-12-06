@@ -13,7 +13,7 @@ while len(passcode) < 8:
     hash = m.hexdigest()
     
     if hash[:5] == "00000":
-        if (ord(hash[5]) >= ord('1') and ord(hash[5]) <= ord('7')) or ord(hash[5]) <= ord('0'):
+        if (ord(hash[5]) >= ord('1') and ord(hash[5]) <= ord('7')) or ord(hash[5]) == ord('0'):
             ind = int(hash[5])
             if not ind in passcode.keys():
                 passcode[ind] = hash[6]
