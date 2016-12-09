@@ -12,7 +12,6 @@ def aba_bab(abas, babs):
     for a in abas:
         for b in babs:
             if a[0] == b[1] and b[0] == a[1]:
-                print a + " " + b
                 return True
     return False
 
